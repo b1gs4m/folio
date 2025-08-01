@@ -1,0 +1,4 @@
+import{jsx as _jsx}from"react/jsx-runtime";export const GoBack=()=>{return{onTap(){// Check if the history length is greater than 1 if(window.history.length>1){window.history.back();}else{// Navigate to the UI kit page if there's no history to go back
+to window.location.href=`${window.location.origin}/uikit`;}}};};import{useContext as __legacyOverrideHOC_useContext}from"react";import{DataObserverContext as __legacyOverrideHOC_DataObserverContext}from"framer";export function withGoBack(C){return props=>{__legacyOverrideHOC_useContext(__legacyOverrideHOC_DataObserverContext);return
+_jsx(C,{...props,...GoBack(props)});};}withGoBack.displayName="GoBack"; export const __FramerMetadata__ = {"exports":{"GoBack":{"type":"override","name":"GoBack","annotations":{"framerContractVersion":"1"}},"withGoBack":{"type":"reactHoc","name":"withGoBack","annotations":{"framerContractVersion":"1"}},"__FramerMetadata__":{"type":"variable"}}}
+//# sourceMappingURL=./Back_button.map

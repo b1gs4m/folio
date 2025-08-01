@@ -1,0 +1,4 @@
+// Check if visitor is in EU const countries=["BE","EL","LT","PT","BG","ES","LU","RO","CZ","FR","RE","GP","MQ","GF","YT","BL","MF","PM","WF","PF","NC","HU","SI","DK","FO","GL","HR","MT","SK","DE","IT","NL","AW","CW","SX","FI","AX","EE","CY","AT","SE","IE","LV","PL","UK","GB","AI","BM","IO","VG","KY","FK","GI","MS","PN","SH","TC","GG","JE","IM"];const
+isInEUTimezone=()=>{return Intl?.DateTimeFormat()?.resolvedOptions()?.timeZone?.startsWith("Europe");};const isEULocale=()=>{const locale=navigator.language??navigator.languages?.[0];return countries.some(country=>locale?.toUpperCase()?.includes(country));};let
+_inEU=null;export const inEU=()=>{if(_inEU===null)_inEU=isInEUTimezone()||isEULocale();return _inEU;}; export const __FramerMetadata__ = {"exports":{"inEU":{"type":"variable","annotations":{"framerContractVersion":"1"}},"__FramerMetadata__":{"type":"variable"}}}
+//# sourceMappingURL=./inEU.map
